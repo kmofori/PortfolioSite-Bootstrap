@@ -1,0 +1,137 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+  padding-top: 1rem;
+  background-color: $primary;
+}
+
+// Contact Box Styling
+.contact-box {
+  position: relative;
+
+  &__icon {
+    width: 2rem;
+    stroke: $tertiary;
+    padding-top: 0.9rem;
+    @include media-breakpoint-up(sm) {
+      width: 4rem;
+    }
+  }
+
+  &__info {
+    padding: 0.4rem;
+    font-weight: 600;
+
+    &--title {
+      color: $white;
+      text-decoration: none;
+      font-size: 1rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        color: $tertiary;
+      }
+    }
+
+    &--subtitle {
+      color: $gray-600;
+      text-decoration: none;
+      font-size: 0.8rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// Social Media Styling
+.footer-sm {
+  background-color: $secondary;
+
+  .lead {
+    text-transform: capitalize;
+  }
+
+  a {
+    color: $white;
+
+    i {
+      font-size: 1.2rem;
+      margin-left: 1.2rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.7rem;
+      }
+
+      &:hover {
+        color: $tertiary;
+      }
+    }
+
+    &::hover {
+      color: $primary;
+    }
+  }
+}
+
+// Information Styling
+.company-list {
+  display: block;
+  list-style: none;
+  position: relative;
+
+  li {
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $tertiary;
+      }
+    }
+  }
+}
+
+// Copyright Content Styling
+.footer-bottom {
+  background-color: $gray-900;
+
+  &__copyright {
+    color: $gray-600;
+
+    a {
+      text-decoration: none;
+      color: $gray-700;
+
+      &:hover {
+        color: $tertiary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Back To Top Button Styling
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 2rem;
+  background-color: $tertiary;
+  bottom: 2rem;
+  z-index: 99999;
+
+  i {
+    color: $white;
+    font-size: 1rem;
+    @include absoluteCenter;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

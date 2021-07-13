@@ -1,0 +1,68 @@
+@use '../custom' as *;
+
+// Intro Section
+.display-2 {
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 700;
+    color: #d2ecf9;
+  }
+
+  &--description {
+    display: block;
+    font-size: 1rem;
+    text-transform: none;
+    color: #d2ecf9;
+    margin-top: 1.2rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.3rem;
+      display: inline-block;
+    }
+  }
+}
+
+// COMPANIES HEADING LINE
+.heading-line::before {
+  content: '';
+  width: 10rem;
+  height: 0.1rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  background-color: $primary;
+}
+.heading-line::after {
+  content: '';
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 32px;
+  margin: 0.1rem auto 1rem auto;
+  margin-bottom: 1rem;
+  display: block;
+  background-color: $secondary;
+}
+
+.display-3 {
+  font-family: 'Poppins', sans-serif;
+
+  &--title {
+    font-size: 1rem;
+    font-weight: 600;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+// Border Right
+.border {
+  &-right {
+    height: 100%;
+    border-right: 0.125rem solid $tertiary;
+  }
+}

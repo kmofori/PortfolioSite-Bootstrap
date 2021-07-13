@@ -1,0 +1,47 @@
+@use '../custom' as *;
+
+.btn-rounded {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba($color: #fff, $alpha: 0.1);
+  background-color: $white;
+  color: $primary;
+
+  span {
+    position: absolute;
+    background-color: $light-blue;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+
+    i {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+    }
+  }
+
+  &:hover {
+    border: 0.1rem solid $white;
+    background-color: $primary;
+    color: $white;
+
+    span {
+      background-color: $white;
+    }
+
+    i {
+      color: $light-blue;
+    }
+  }
+}

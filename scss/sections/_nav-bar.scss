@@ -1,0 +1,34 @@
+@use '../custom' as *;
+
+.menu {
+  background-color: $primary;
+
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: #fff !important;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #d2ecf9 !important;
+
+  span {
+    color: #1891ac;
+  }
+
+  &:hover {
+    span {
+      color: #d2ecf9;
+    }
+  }
+}

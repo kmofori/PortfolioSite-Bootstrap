@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Learning Bootstrap V5 with sass by building a portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass"
+  ],
+  "author": "kmarfo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^10.2.6",
+    "bootstrap": "^5.0.2",
+    "postcss-cli": "^8.3.1"
+  }
+}
